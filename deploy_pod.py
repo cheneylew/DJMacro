@@ -3,7 +3,9 @@
 import os
 
 if __name__ == '__main__':
-    os.system("")
+    os.system('git add *')
+    os.system('git commit -m "更新"')
+    os.system("git push origin master")
     output = os.popen('git tag')
     text=output.read()
     arr=text.split('\n')
