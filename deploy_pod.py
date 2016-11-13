@@ -45,7 +45,7 @@ if __name__ == '__main__':
             file_object.close()
             #推送本地文件到远程
             os.system('git add *')
-            os.system('git commit -m "更新"')
+            os.system('git commit -m "更新组件'+new_version+'"')
             os.system("git push origin master")
             #打tag
             os.system('git tag -m "" '+new_version)
