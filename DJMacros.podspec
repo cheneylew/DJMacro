@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJMacros'
-  s.version          = '0.7.2'
+  s.version          = '0.7.3'
   s.summary          = 'DJMacros全局宏定义 用于快速生成开发项目-增加基础宏定义'
 
 # This description is used to generate tags and improve search results.

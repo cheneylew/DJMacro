@@ -66,7 +66,7 @@ if __name__ == '__main__':
             os.system('git tag -m "" '+new_version)
             os.system('git push --tags')
             #更新仓库
-            print "更新"+SPECNAME+"仓库"
+            print "5.更新"+SPECNAME+"仓库"
             os.system('pod repo push '+SPECNAME+' '+fileName+' --allow-warnings')
             os.system('pod repo update')
             print "完毕。。。"
