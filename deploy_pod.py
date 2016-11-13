@@ -34,13 +34,13 @@ if __name__ == '__main__':
         else:
             versionArray[2]=(str)((int)(versionArray[2])+1)
         new_version=versionArray[0]+'.'+versionArray[1]+'.'+versionArray[2]
-        print "新版本号："+new_version
+        print "1.新版本号："+new_version
         #查找podspec文件
         op1=os.popen('ls *.podspec')
         fileName=op1.read()
         fileName=fileName.replace('\n','')
         #校验pods描述文件是否正确
-        print "校验pod文件中"
+        print "2.校验pod文件中"
         op2=os.popen('pod lib lint --allow-warnings')
         text1=op2.read()
         print text1
@@ -57,14 +57,18 @@ if __name__ == '__main__':
             file_object.write(new_content)
             file_object.close()
             #推送本地文件到远程
+            print "3.推送本地文件到远程"
             os.system('git add *')
             os.system('git commit -m "更新组件'+new_version+'"')
             os.system("git push origin master")
             #打tag
+            print "4.打tag"
             os.system('git tag -m "" '+new_version)
             os.system('git push --tags')
             #更新仓库
+            print "更新"+SPECNAME+"仓库"
             os.system('pod repo push '+SPECNAME+' '+fileName+' --allow-warnings')
             os.system('pod repo update')
+            print "完毕。。。"
         else:
             print "校验失败，检查pods文件"
