@@ -26,8 +26,11 @@ if __name__ == '__main__':
         if v3=='9':
             if v2=='9':
                 versionArray[0]=(str)((int)(versionArray[0])+1)
+                versionArray[1]='0'
+                versionArray[2]='0'
             else:
                 versionArray[1]=(str)((int)(versionArray[1])+1)
+                versionArray[2]='0'
         else:
             versionArray[2]=(str)((int)(versionArray[2])+1)
         new_version=versionArray[0]+'.'+versionArray[1]+'.'+versionArray[2]
