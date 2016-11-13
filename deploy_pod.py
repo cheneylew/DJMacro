@@ -20,8 +20,18 @@ if __name__ == '__main__':
     if len(tag) >= 0:
         #生成新版本号
         versionArray=tag.split('.')
-        versionArray[2]=(str)((int)(versionArray[2])+1)
+        v1=versionArray[0]
+        v2=versionArray[1]
+        v3=versionArray[2]
+        if v3=='9':
+            if v2=='9':
+                versionArray[0]=(str)((int)(versionArray[0])+1)
+            else:
+                versionArray[1]=(str)((int)(versionArray[1])+1)
+        else:
+            versionArray[2]=(str)((int)(versionArray[2])+1)
         new_version=versionArray[0]+'.'+versionArray[1]+'.'+versionArray[2]
+        print "新版本号："+new_version
         #查找podspec文件
         op1=os.popen('ls *.podspec')
         fileName=op1.read()
