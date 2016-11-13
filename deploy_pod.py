@@ -2,6 +2,8 @@
 
 import os,re
 
+SPECNAME="CNSpecs"
+
 if __name__ == '__main__':
     output = os.popen('git tag')
     text=output.read()
@@ -36,5 +38,5 @@ if __name__ == '__main__':
         os.system('git commit -m "更新"')
         os.system("git push origin master")
         #更新仓库
-        os.system('pod repo push Specs '+fileName+' --allow-warnings')
+        os.system('pod repo push '+SPECNAME+' '+fileName+' --allow-warnings')
         os.system('pod repo update')
