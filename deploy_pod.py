@@ -17,7 +17,5 @@ if __name__ == '__main__':
         versionArray=tag.split('.')
         versionArray[2]=(str)((int)(versionArray[2])+1)
         new_version=versionArray[0]+'.'+versionArray[1]+'.'+versionArray[2]
-        output1 = os.popen('git tag -m "" '+new_version)
-        print output1
-        output2 = os.popen('git push --tags')
-        print output2
+        os.system('git tag -m "" '+new_version)
+        os.system('git push --tags')
