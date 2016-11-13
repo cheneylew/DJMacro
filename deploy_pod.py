@@ -43,13 +43,13 @@ if __name__ == '__main__':
             file_object = open(fileName, 'w')
             file_object.write(new_content)
             file_object.close()
-            #打tag
-            os.system('git tag -m "" '+new_version)
-            os.system('git push --tags')
             #推送本地文件到远程
             os.system('git add *')
             os.system('git commit -m "更新"')
             os.system("git push origin master")
+            #打tag
+            os.system('git tag -m "" '+new_version)
+            os.system('git push --tags')
             #更新仓库
             os.system('pod repo push '+SPECNAME+' '+fileName+' --allow-warnings')
             os.system('pod repo update')
