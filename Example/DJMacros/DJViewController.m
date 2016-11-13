@@ -9,7 +9,15 @@
 #import "DJViewController.h"
 #import "DJSO.h"
 
-@interface DJViewController ()
+@protocol DJViewControllerDelegate <NSObject>
+
+
+
+@end
+
+@interface DJViewController ()<DJViewControllerDelegate>
+
+PP_DELEGATE(DJViewControllerDelegate, delegate)
 
 @end
 

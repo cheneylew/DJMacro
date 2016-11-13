@@ -359,6 +359,29 @@ description:(desc), ##__VA_ARGS__]; \
 #define NSNULL_TO_NIL(value)            ((id)value == [NSNull null] ? nil : value)
 
 #pragma mark -
+#pragma mark 快速定义属性
+#define PP_BOOL(name)               @property (nonatomic, assign)   BOOL (name);
+#define PP_STRING(name)             @property (nonatomic, copy)     NSString *(name);
+#define PP_ARRAY(name)              @property (nonatomic, strong)   NSArray *(name);
+#define PP_MUTABLE_ARRAY(name)      @property (nonatomic, strong)   NSMutableArray *(name);
+#define PP_DICTIONARY(name)         @property (nonatomic, strong)   NSDictionary *(name);
+#define PP_MUTABLE_DICTIONARY(name) @property (nonatomic, strong)   NSMutableDictionary *(name);
+#define PP_INT(name)                @property (nonatomic, assign)   int (name);
+#define PP_INTEGER(number)          @property (nonatomic, assign)   NSUInteger (number);
+#define PP_VIEW(name)               @property (nonatomic, strong)   UIView *(name);
+#define PP_IMAGE(name)              @property (nonatomic, strong)   UIImage *(name);
+#define PP_IMAGEVIEW(name)          @property (nonatomic, strong)   UIImageView *(name);
+#define PP_LABLE(name)              @property (nonatomic, strong)   UILabel *(name);
+#define PP_TEXTFIELD(name)          @property (nonatomic, strong)   UITextField *(name);
+#define PP_TABLEVIEW(name)          @property (nonatomic, strong)   UITableView *(name);
+#define PP_TEXTVIEW(name)           @property (nonatomic, strong)   UITextView *(name);
+#define PP_CONTROLLER(name)         @property (nonatomic, strong)   UIViewController *(name);
+
+#define PP_STRONG(class,name)       @property (nonatomic, strong)   class *(name);
+#define PP_ASSIGN(class,name)       @property (nonatomic, assign)   class *(name);
+#define PP_DELEGATE(protocal,name)  @property (nonatomic, assign)   id<protocal> (name);
+
+#pragma mark -
 #pragma mark 函数块
 
 static inline BOOL IsEmpty(id thing) {
