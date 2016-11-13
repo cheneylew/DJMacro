@@ -19,3 +19,5 @@ if __name__ == '__main__':
         new_version=versionArray[0]+'.'+versionArray[1]+'.'+versionArray[2]
         os.system('git tag -m "" '+new_version)
         os.system('git push --tags')
+        spec_name=os.popen('ls *.podspec')
+        print spec_name
