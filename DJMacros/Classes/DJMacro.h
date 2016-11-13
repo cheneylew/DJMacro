@@ -379,7 +379,7 @@ description:(desc), ##__VA_ARGS__]; \
 
 #define PP_STRONG(class,name)       @property (nonatomic, strong)   class *(name);
 #define PP_ASSIGN(class,name)       @property (nonatomic, assign)   class *(name);
-#define PP_DELEGATE(protocal,name)  @property (nonatomic, assign)   id<protocal> (name);
+#define PP_DELEGATE(protocal,name)  @property (nonatomic, weak)     id<protocal> (name);
 
 #pragma mark -
 #pragma mark 函数块
