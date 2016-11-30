@@ -29,12 +29,17 @@ CGSize  ScreenSize();
                                 green:((float)((hex & 0xFF00) >> 8))/255.0 blue:((float)(hex & 0xFF))/255.0 alpha:a]
 #define HEX(hex)                HEXA(hex,1)
 
-#define FIT5(x)                 ((x)/640.0f)*SCREEN_WIDTH*1.2
-#define FIT6(x)                 ((x)/750.0f)*SCREEN_WIDTH*1.2
-#define FIT6P(x)                ((x)/1242.0f)*SCREEN_WIDTH*1.2
-#define FIT1024(x)              ((x)/1024.0f)*SCREEN_WIDTH*1.2
+#define FIT5(x)                 ((x)/640.0f)*SCREEN_WIDTH
+#define FIT6(x)                 ((x)/750.0f)*SCREEN_WIDTH
+#define FIT6P(x)                ((x)/1242.0f)*SCREEN_WIDTH
+#define FIT1024(x)              ((x)/1024.0f)*SCREEN_WIDTH
 #define FIT_RECT6(x,y,w,h)      CGRectMake(FIT6(x), FIT6(y), FIT6(w), FIT6(h))
 #define FIT_RECT1024(x,y,w,h)   CGRectMake(FIT1024(x), FIT1024(y), FIT1024(w), FIT1024(h))
+
+// 由于量出的字体看上去比较小，所以字体发到1.1倍
+#define FIT5FONT(x)             FIT5(x)*1.1
+#define FIT6FONT(x)             FIT6(x)*1.1
+#define FIT6PFONT(x)            FIT6P(x)*1.1
 
 #define LOAD_NIB_NAMED(nibName) do{[MAIN_BUNDLE loadNibNamed:nibName owner:self options:nil];}while(0)
 
