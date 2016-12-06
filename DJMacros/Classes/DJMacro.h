@@ -386,6 +386,7 @@ description:(desc), ##__VA_ARGS__]; \
 #define PP_CONTROLLER(name)         @property (nonatomic, strong)   UIViewController *(name);
 
 #define PP_COPY(class,name)         @property (nonatomic, copy)     class *(name);
+#define PP_COPY_BLOCK(type,name)    @property (nonatomic, copy)     type (name);
 #define PP_STRONG(class,name)       @property (nonatomic, strong)   class *(name);
 #define PP_ASSIGN(class,name)       @property (nonatomic, assign)   class *(name);
 #define PP_ASSIGN_BASIC(type,name)  @property (nonatomic, assign)   type (name);
