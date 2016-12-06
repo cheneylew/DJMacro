@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJMacros'
-  s.version          = '0.7.10'
+  s.version          = '0.7.11'
   s.summary          = 'DJMacros全局宏定义 用于快速生成开发项目-增加基础宏定义'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ DJMacros全局宏定义 用于快速生成开发项目
   s.subspec 'Extension' do |extension|
     extension.source_files = 'DJMacros/Classes/Extension/**/*'
     #extension.public_header_files = 'DJMacros/Classes/Extension/**/*.h'
-    #extension.dependency 'OpenUDID', '~> 1.0.0'
+    extension.dependency 'TTTAttributedLabel', '~> 2.0.0'
   end
 
   # s.resource_bundles = {
