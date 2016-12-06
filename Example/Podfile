@@ -1,14 +1,11 @@
 use_frameworks!
 
 target 'DJMacros_Example' do
-  pod 'DJMacros', :path => '../'
-
+    #pod 'DJMacros', :path => '../'
+  pod 'FRHyperLabel', '~> 1.0.3'
+  pod 'TTTAttributedLabel', '~> 2.0.0'
+  
   target 'DJMacros_Tests' do
     inherit! :search_paths
-
-    pod 'Specta'
-  pod 'Expecta'
-  pod 'FBSnapshotTestCase'
-  pod 'Expecta+Snapshots'
   end
 end

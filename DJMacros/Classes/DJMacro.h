@@ -10,6 +10,9 @@
 #import     <Foundation/Foundation.h>
 #import     <mach/mach_time.h>
 #import     <CoreGraphics/CGBase.h>
+#import     "NSMutableAttributedString+DJCategory.h"
+#import     "TTTAttributedLabel+DJCategory.h"
+#import     "NSAttributedString+DJCategory.h"
 #include    <Availability.h>            //苹果版本
 
 #ifdef __OBJC__
@@ -385,8 +388,32 @@ description:(desc), ##__VA_ARGS__]; \
 #define PP_COPY(class,name)         @property (nonatomic, copy)     class *(name);
 #define PP_STRONG(class,name)       @property (nonatomic, strong)   class *(name);
 #define PP_ASSIGN(class,name)       @property (nonatomic, assign)   class *(name);
-#define PP_ASSIGN_BASIC(type,name)  @property (nonatomic, assign)   class (name);
+#define PP_ASSIGN_BASIC(type,name)  @property (nonatomic, assign)   type (name);
 #define PP_DELEGATE(protocal,name)  @property (nonatomic, weak)     id<protocal> (name);
+
+#pragma mark -
+#pragma mark Attributes
+#define ATT_FONT                    NSFontAttributeName                 //UIFont    文字字体
+#define ATT_TEXT_COLOR              NSForegroundColorAttributeName      //UIColor   文字颜色
+#define ATT_BKG_COLOR               NSBackgroundColorAttributeName      //UIColor   文字背景色
+#define ATT_UNDERLINE_STYLE         NSUnderlineStyleAttributeName       //NSNumber  下划线    @0 无下划线 @1有下划线
+#define ATT_UNDERLINE_COLOR         NSUnderlineColorAttributeName       //UIColor   下划线颜色
+#define ATT_BASELINE_OFFSET         NSBaselineOffsetAttributeName       //NSNumber  文字相对于其他文字基准线向上的偏移量
+#define ATT_STROKE_WIDTH            NSStrokeWidthAttributeName          //NSNumber  字体变成空心字体，字体边线宽度为value
+#define ATT_STROKE_COLOR            NSStrokeColorAttributeName          //UIColor   字体边线颜色
+#define ATT_LIGATURE                NSLigatureAttributeName             //NSNumber  NSNumber @0:无连体;@1:默认连体
+#define ATT_LINK                    NSLinkAttributeName                 //NSURL/NSString 网络链接
+#define ATT_ATTACHMENT              NSAttachmentAttributeName           //NSTextAttachment 文字附件属性（图文混排相关）
+#define ATT_KERN                    NSKernAttributeName                 //NSNumber  字体间距
+#define ATT_STRIKETHROUGH_STYLE     NSStrikethroughStyleAttributeName   //NSNumber  删除线样式
+#define ATT_SHADOW                  NSShadowAttributeName               //NSShadow
+#define ATT_TEXT_EFFECT             NSTextEffectAttributeName           //NSString
+#define ATT_OBLIQ                   NSObliquenessAttributeName          //NSNumber  字体歪斜效果
+#define ATT_EXPS                    NSExpansionAttributeName            //NSNumber  文字向左右拉伸（正数），向中间缩小（负数）
+#define ATT_WRITING_DIRECTION       NSWritingDirectionAttributeName     //NSArray   文字的书写样式
+
+
+
 
 #pragma mark -
 #pragma mark 函数块

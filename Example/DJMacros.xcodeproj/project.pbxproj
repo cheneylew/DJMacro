@@ -20,10 +20,15 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		641716FCCCEFBAABDB22F1AB /* Pods_DJMacros_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE24C546C2436B0240952785 /* Pods_DJMacros_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BAD6FA2CD81060AB06E14EF3 /* Pods_DJMacros_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46E8D20B23AABF9E6726B53 /* Pods_DJMacros_Example.framework */; };
 		C91B7D221DD55A8E00EDBF8E /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C91B7D1E1DD55A8E00EDBF8E /* .gitkeep */; };
 		C91B7D231DD55A8E00EDBF8E /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = C91B7D201DD55A8E00EDBF8E /* .gitkeep */; };
 		C91B7D271DD55AC400EDBF8E /* DJMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B7D261DD55AC400EDBF8E /* DJMacro.m */; };
+		C94A79111DF65710003F8BFF /* NSMutableAttributedString+DJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A79101DF65710003F8BFF /* NSMutableAttributedString+DJCategory.m */; };
+		C94A79141DF66889003F8BFF /* TTTAttributedLabel+DJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A79131DF66889003F8BFF /* TTTAttributedLabel+DJCategory.m */; };
+		C94A79171DF66D76003F8BFF /* NSAttributedString+DJCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C94A79161DF66D76003F8BFF /* NSAttributedString+DJCategory.m */; };
 		C9C0631A1DD719F0002FCCFF /* DJSO.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C063191DD719F0002FCCFF /* DJSO.m */; };
 		C9DBDA2D1DD57CAA006C4CAE /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = C9DBDA2C1DD57CAA006C4CAE /* UIColor+HEX.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01F9CF8CBE8150E7376AEF6D /* Pods-DJMacros_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJMacros_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJMacros_Example/Pods-DJMacros_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3534AAC4D3FB377CA2EB1599 /* Pods-DJMacros_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJMacros_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJMacros_Tests/Pods-DJMacros_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3643EF3D2A72E55E88F3E75C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5CE5DC9746872765D28C303E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DJMacros_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJMacros_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,14 +69,24 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		78B024B9867A04413E772B8F /* DJMacros.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DJMacros.podspec; path = ../DJMacros.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B2F2FAF863BF4B67D83F296A /* Pods-DJMacros_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJMacros_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJMacros_Tests/Pods-DJMacros_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46E8D20B23AABF9E6726B53 /* Pods_DJMacros_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJMacros_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91B7D1E1DD55A8E00EDBF8E /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C91B7D201DD55A8E00EDBF8E /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		C91B7D251DD55AC400EDBF8E /* DJMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJMacro.h; sourceTree = "<group>"; };
 		C91B7D261DD55AC400EDBF8E /* DJMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJMacro.m; sourceTree = "<group>"; };
+		C94A790F1DF65710003F8BFF /* NSMutableAttributedString+DJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+DJCategory.h"; sourceTree = "<group>"; };
+		C94A79101DF65710003F8BFF /* NSMutableAttributedString+DJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+DJCategory.m"; sourceTree = "<group>"; };
+		C94A79121DF66889003F8BFF /* TTTAttributedLabel+DJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTTAttributedLabel+DJCategory.h"; sourceTree = "<group>"; };
+		C94A79131DF66889003F8BFF /* TTTAttributedLabel+DJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TTTAttributedLabel+DJCategory.m"; sourceTree = "<group>"; };
+		C94A79151DF66D76003F8BFF /* NSAttributedString+DJCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DJCategory.h"; sourceTree = "<group>"; };
+		C94A79161DF66D76003F8BFF /* NSAttributedString+DJCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DJCategory.m"; sourceTree = "<group>"; };
 		C9C063181DD719F0002FCCFF /* DJSO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJSO.h; sourceTree = "<group>"; };
 		C9C063191DD719F0002FCCFF /* DJSO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJSO.m; sourceTree = "<group>"; };
 		C9DBDA2B1DD57CAA006C4CAE /* UIColor+HEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
 		C9DBDA2C1DD57CAA006C4CAE /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		CE24C546C2436B0240952785 /* Pods_DJMacros_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJMacros_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D729FF3E7449ACA77D85463A /* Pods-DJMacros_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJMacros_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJMacros_Example/Pods-DJMacros_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +97,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				BAD6FA2CD81060AB06E14EF3 /* Pods_DJMacros_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +108,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
+				641716FCCCEFBAABDB22F1AB /* Pods_DJMacros_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		397469827797912546936053 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F9CF8CBE8150E7376AEF6D /* Pods-DJMacros_Example.debug.xcconfig */,
+				D729FF3E7449ACA77D85463A /* Pods-DJMacros_Example.release.xcconfig */,
+				B2F2FAF863BF4B67D83F296A /* Pods-DJMacros_Tests.debug.xcconfig */,
+				3534AAC4D3FB377CA2EB1599 /* Pods-DJMacros_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +135,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				397469827797912546936053 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +155,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
+				C46E8D20B23AABF9E6726B53 /* Pods_DJMacros_Example.framework */,
+				CE24C546C2436B0240952785 /* Pods_DJMacros_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,6 +252,12 @@
 			children = (
 				C9DBDA2B1DD57CAA006C4CAE /* UIColor+HEX.h */,
 				C9DBDA2C1DD57CAA006C4CAE /* UIColor+HEX.m */,
+				C94A790F1DF65710003F8BFF /* NSMutableAttributedString+DJCategory.h */,
+				C94A79101DF65710003F8BFF /* NSMutableAttributedString+DJCategory.m */,
+				C94A79151DF66D76003F8BFF /* NSAttributedString+DJCategory.h */,
+				C94A79161DF66D76003F8BFF /* NSAttributedString+DJCategory.m */,
+				C94A79121DF66889003F8BFF /* TTTAttributedLabel+DJCategory.h */,
+				C94A79131DF66889003F8BFF /* TTTAttributedLabel+DJCategory.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -230,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "DJMacros_Example" */;
 			buildPhases = (
+				A1B4024F0DFFA49FBAC4E035 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
+				AC1F45920F989C559AEF0BDB /* [CP] Embed Pods Frameworks */,
+				584CB2A8D3618DD01737FCEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "DJMacros_Tests" */;
 			buildPhases = (
+				3DB5AED04786FC0D443C70A5 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				6AED8472755C00E0E99688AA /* [CP] Embed Pods Frameworks */,
+				BFBCAF5E3F146E587CA66309 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,15 +363,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DB5AED04786FC0D443C70A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		584CB2A8D3618DD01737FCEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJMacros_Example/Pods-DJMacros_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AED8472755C00E0E99688AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJMacros_Tests/Pods-DJMacros_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B4024F0DFFA49FBAC4E035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1F45920F989C559AEF0BDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJMacros_Example/Pods-DJMacros_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFBCAF5E3F146E587CA66309 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DJMacros_Tests/Pods-DJMacros_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94A79171DF66D76003F8BFF /* NSAttributedString+DJCategory.m in Sources */,
 				C91B7D271DD55AC400EDBF8E /* DJMacro.m in Sources */,
+				C94A79111DF65710003F8BFF /* NSMutableAttributedString+DJCategory.m in Sources */,
 				C9C0631A1DD719F0002FCCFF /* DJSO.m in Sources */,
 				6003F59E195388D20070C39A /* DJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* DJViewController.m in Sources */,
+				C94A79141DF66889003F8BFF /* TTTAttributedLabel+DJCategory.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				C9DBDA2D1DD57CAA006C4CAE /* UIColor+HEX.m in Sources */,
 			);
@@ -445,6 +586,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F9CF8CBE8150E7376AEF6D /* Pods-DJMacros_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -460,6 +602,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D729FF3E7449ACA77D85463A /* Pods-DJMacros_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -475,6 +618,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F2FAF863BF4B67D83F296A /* Pods-DJMacros_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -498,6 +642,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3534AAC4D3FB377CA2EB1599 /* Pods-DJMacros_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DJMacros'
-  s.version          = '0.7.8'
+  s.version          = '0.7.9'
   s.summary          = 'DJMacros全局宏定义 用于快速生成开发项目-增加基础宏定义'
 
 # This description is used to generate tags and improve search results.
@@ -45,5 +45,5 @@ DJMacros全局宏定义 用于快速生成开发项目
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'TTTAttributedLabel', '~> 2.0.0'
 end

@@ -1,0 +1,15 @@
+PODS:
+  - FRHyperLabel (1.0.3)
+  - TTTAttributedLabel (2.0.0)
+
+DEPENDENCIES:
+  - FRHyperLabel (~> 1.0.3)
+  - TTTAttributedLabel (~> 2.0.0)
+
+SPEC CHECKSUMS:
+  FRHyperLabel: 99d08d3667880b4c430071c9afbcb93aaaa34b37
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+
+PODFILE CHECKSUM: beb2c5e69ccb01e1f7677977fb97fc2599ca036c
+
+COCOAPODS: 1.1.1

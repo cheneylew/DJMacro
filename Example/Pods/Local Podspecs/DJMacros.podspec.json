@@ -1,9 +1,9 @@
 {
   "name": "DJMacros",
-  "version": "0.1.0",
-  "summary": "A short description of DJMacros.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DJMacros",
+  "version": "0.7.8",
+  "summary": "DJMacros全局宏定义 用于快速生成开发项目-增加基础宏定义",
+  "description": "DJMacros全局宏定义 用于快速生成开发项目\n作为一个工具类集成到项目中",
+  "homepage": "https://github.com/cheneylew/DJMacro",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,18 @@
     "Deju Liu": "cheneylew@163.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DJMacros.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/cheneylew/DJMacro.git",
+    "tag": "0.7.8"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DJMacros/Classes/**/*"
+  "source_files": "DJMacros/Classes/*",
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Extension",
+      "source_files": "DJMacros/Classes/Extension/**/*"
+    }
+  ]
 }
