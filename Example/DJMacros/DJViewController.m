@@ -47,7 +47,6 @@ PP_DELEGATE(DJViewControllerDelegate, delegate)
         }];
         
         [tf setLinkForSubstring:@"hello" withAttribute:@{ATT_LINK:@"http://www.baidu.com/"} andLinkHandler:^(FRHyperLabel *label, NSString *substring) {
-            
         }];
         
         [self.view addSubview:tf];
@@ -93,7 +92,31 @@ PP_DELEGATE(DJViewControllerDelegate, delegate)
         
         [label dj_addLinkToURLString:@"http://www.baidu.com/" subString:@"世界你好"];
         label.delegate = self;
+    }
+    
+    
+    {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 300, 300, 200)];
+        label.backgroundColor = [UIColor lightGrayColor];
+        label.numberOfLines = 0;
+        [self.view addSubview:label];
         
+        NSMutableAttributedString *att = [[NSMutableAttributedString alloc] init];
+        [att dj_appendString:@"Hello World" withAttributes:@{ATT_FONT:[UIFont systemFontOfSize:20]}];
+        
+        [att dj_addLine:2];
+        
+        NSTextAttachment *textAtta = [[NSTextAttachment alloc] init];
+        textAtta.image = [UIImage imageNamed:@"AppIcon40x40"];
+        textAtta.bounds = CGRectMake(0, 0, 100, 100);
+        NSAttributedString *att1 = [NSMutableAttributedString attributedStringWithAttachment:textAtta];
+        [att appendAttributedString:att1];
+        
+        [att dj_addLine:2];
+        
+        [att dj_appendString:@"Hello World" withAttributes:@{ATT_FONT:[UIFont systemFontOfSize:20]}];
+        
+        label.attributedText = att;
     }
 }
 
