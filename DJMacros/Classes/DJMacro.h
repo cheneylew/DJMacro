@@ -416,6 +416,10 @@ description:(desc), ##__VA_ARGS__]; \
 #define ATT_PARAGRAPH_STYLE         NSParagraphStyleAttributeName       //NSArray of NSNumbers  顺序
 
 #pragma mark -
+#pragma mark 废弃注释
+#define DEPRECATED(msg)             __attribute__((deprecated(msg)))
+
+#pragma mark -
 #pragma mark 函数块
 
 static inline BOOL IsEmpty(id thing) {
