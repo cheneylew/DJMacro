@@ -101,6 +101,9 @@ CGSize  ScreenSize();
 #define IOS_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 #define IOS_VERSION_COMPARE_GREATER_THAN(a,b)    ([a compare:b options:NSNumericSearch] == NSOrderedDescending)
 
+#define IOS12_OR_LATER         ( [[[UIDevice currentDevice] systemVersion] compare:@"12.0"] != NSOrderedAscending )
+#define IOS11_OR_LATER         ( [[[UIDevice currentDevice] systemVersion] compare:@"11.0"] != NSOrderedAscending )
+#define IOS10_OR_LATER         ( [[[UIDevice currentDevice] systemVersion] compare:@"10.0"] != NSOrderedAscending )
 #define IOS9_OR_LATER          ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
 #define IOS8_OR_LATER          ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
 #define IOS7_OR_LATER          ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
@@ -417,7 +420,9 @@ description:(desc), ##__VA_ARGS__]; \
 
 #pragma mark -
 #pragma mark 废弃注释
-#define DEPRECATED(msg)             __attribute__((deprecated(msg)))
+#define DEPRECATED(msg)                             __attribute__((deprecated(msg)))
+#define DEPRECATED_IOS(os_min,os_max,msg)           NS_DEPRECATED_IOS(3_0, 8_0, msg)
+#define AVAILABLE_IOS(os_verison)                   NS_AVAILABLE_IOS(os_verison)
 
 #pragma mark -
 #pragma mark 函数块
