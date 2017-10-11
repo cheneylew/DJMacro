@@ -121,6 +121,7 @@ CGSize  ScreenSize();
 #define iPhone6OrBigger         ([[UIScreen mainScreen] bounds].size.height >= 667.0)
 #define iPhone6Plus             ([[UIScreen mainScreen] bounds].size.height == 736.0)
 #define iPhone6PlusOrSmaller    ([[UIScreen mainScreen] bounds].size.height <= 736.0)
+#define iPhoneX                 ([[UIScreen mainScreen] bounds].size.height == 812.0)
 
 #pragma mark -
 #pragma mark Collections
@@ -228,10 +229,11 @@ CGSize  ScreenSize();
 #define UIViewAutoresizingFill                      (UIViewAutoresizingFlexibleHeight       | UIViewAutoresizingFlexibleWidth)
 
 // Default components size
-#define STATUS_BAR_DEFAULT_HEIGHT                   20
+#define STATUS_BAR_DEFAULT_HEIGHT                   (iPhoneX?44:20)
 #define NAVIGATION_BAR_DEFAULT_HEIGHT               44
 #define TOOLBAR_DEFAULT_HEIGHT                      44
 #define TABBAR_DEFAULT_HEIGHT                       56
+#define NAVIGATION_BAR_ALL_HEIGHT                   (NAVIGATION_BAR_DEFAULT_HEIGHT+STATUS_BAR_DEFAULT_HEIGHT)
 
 #pragma mark -
 #pragma mark IndexPath
